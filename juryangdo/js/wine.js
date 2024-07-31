@@ -92,7 +92,7 @@ function paintDrink(drink){
 
   const drinkImage = document.createElement("img");
   drinkImage.className = 'drinkImage';
-  drinkImage.src = `img/${drink.id}.jpg`;
+  drinkImage.src = `juryangdo/img/${drink.id}.jpg`;
 
   const divName = document.createElement("h3");
   divName.className = 'title';
