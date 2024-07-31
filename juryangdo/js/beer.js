@@ -63,7 +63,7 @@ function paintDrink(drink){
 
   const drinkImage = document.createElement("img");
   drinkImage.className = 'drinkImage';
-  drinkImage.src = `img/${drink.id}.png`;
+  drinkImage.src = `juryangdo/img/${drink.id}.png`;
 
   const divName = document.createElement("h3");
   divName.className = 'title';
@@ -77,7 +77,7 @@ function paintDrink(drink){
   for (var i = 0; i < count; i++){
     const glassImage = document.createElement("img");
     glassImage.className = 'glass';
-    glassImage.src = `glassimg/beer10.png`
+    glassImage.src = `juryangdo/glassimg/beer10.png`
     divCalResult.appendChild(glassImage);
   } 
 
@@ -85,7 +85,7 @@ function paintDrink(drink){
   const number = Math.round((drink.calresult - Math.floor(drink.calresult))*10);
   leftoverImage.className = 'glass';
   if(number != 0){
-    leftoverImage.src = `glassimg/beer${number}.png`;
+    leftoverImage.src = `juryangdo/glassimg/beer${number}.png`;
   }
 
   const message = document.createElement("div");

@@ -118,13 +118,13 @@ function paintDrink(drink){
     for (var i = 0; i < countBottle; i++){
       const bottleImage = document.createElement("img");
       bottleImage.className = 'glass';
-      bottleImage.src = "glassimg/bottle.png";
+      bottleImage.src = "juryangdo/glassimg/bottle.png";
       divCalResult.appendChild(bottleImage);
     }
     for (var i = 0; i < countGlass; i++){
       const glassImage = document.createElement("img");
       glassImage.className = 'glass';
-      glassImage.src = "glassimg/wine10.png";
+      glassImage.src = "juryangdo/glassimg/wine10.png";
       divCalResult.appendChild(glassImage);
     }
 
@@ -134,7 +134,7 @@ function paintDrink(drink){
     message.innerText = countBottle + '병 '
 
     if(number != 0){
-      leftoverImage.src = `glassimg/wine${number}.png`;
+      leftoverImage.src = `juryangdo/glassimg/wine${number}.png`;
       divCalResult.appendChild(leftoverImage);
       message.innerText = message.innerText + leftcalresult + '잔 마실 수 있어요'
     }else{
@@ -146,12 +146,12 @@ function paintDrink(drink){
     for (var i = 0; i < count; i++){
       const glassImage = document.createElement("img");
       glassImage.className = 'glass';
-      glassImage.src = "glassimg/wine10.png";
+      glassImage.src = "juryangdo/glassimg/wine10.png";
       divCalResult.appendChild(glassImage);
     }
     const number = Math.round((drink.calresult - count)*10);
     if(number != 0){
-      leftoverImage.src = `glassimg/wine${number}.png`;
+      leftoverImage.src = `juryangdo/glassimg/wine${number}.png`;
       divCalResult.appendChild(leftoverImage);
     }
 
