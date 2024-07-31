@@ -66,7 +66,7 @@ let wines = [
 ]
 
 const drinksList = document.getElementById("drinks");
-const myAlchol = 100; //입력받을값
+const myAlchol = 40; //입력받을값
 const alcholList = document.getElementsByClassName("alchol");
 const resultList = []
 
