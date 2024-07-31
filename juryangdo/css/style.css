@@ -1,0 +1,119 @@
+body {
+	height: 100vh;
+	justify-content: center;
+}
+
+.btn_group{
+  padding-bottom: 10px;
+}
+
+.box {
+  background-color: black;
+  overflow: hidden;
+  position: relative;
+}
+.box img {
+  height: 45vh;
+  min-height: 200px;
+  width: auto;
+  float: right;
+}
+.wine {
+  padding-left: 5vw;
+  height: 45vh;
+  min-height: 200px;
+  position: absolute;
+  display: table;
+}
+
+.wine div{
+  padding-top: 30px;
+  padding-left: 6vw;
+  display: table-cell;
+  vertical-align: middle;
+  color: white;
+  font-size: 42px;
+  line-height: 0.7;
+}
+
+#menu{
+  padding-bottom: 10px;
+}
+
+#menu .btn_group{
+  padding-right: 5%;
+  padding-top: 10%;
+}
+#menu .btn_group .btn{
+  float: right;
+  margin-right: 2px;
+}
+
+#drinks{
+  padding-top: 80px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 100%;
+  /* background-color: aquamarine; */
+}
+
+#drinks div{
+  flex-wrap: wrap;
+  width: 30%;
+  max-width: 320px;
+  height: 30%;
+	padding: 10px 50px;
+	justify-content: center;
+  /* background-color: aqua; */
+  display: flex;
+}
+
+#drinks .title{
+  display: flex;
+  justify-content: center;
+}
+
+
+#drinks .drinkImage{
+  height: 30vh;
+  min-height: 150px;
+  width: auto;
+  padding: 5% 5%;
+}
+
+#drinks .title{
+  /* background-color: bisque; */
+  min-width: 210px;
+  padding: 0 5%;
+}
+
+.white .title{
+  color: white;
+  text-shadow: -1px 0px black, 0px 1px black, 1px 0px black,0px -1px black;
+}
+
+.red .title{
+  /* color: rgb(145, 31, 31); */
+  color: white;
+  text-shadow: -1px 0px rgb(145, 31, 31), 0px 1px rgb(145, 31, 31), 1px 0px rgb(145, 31, 31),0px -1px rgb(145, 31, 31);
+}
+
+#drinks .result{
+  width: 50%;
+  /* background-color: yellow; */
+}
+
+#drinks .result .intext{
+  min-width: max-content;
+  /* background-color: yellowgreen; */
+}
+
+#drinks .result .glass{
+  display: flex;
+  width: 20px;
+  height: auto;
+  float: left;
+}
+
+
