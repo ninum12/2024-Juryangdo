@@ -10,7 +10,7 @@ body {
 .box {
   background-color: black;
   overflow: hidden;
-  position: relative;
+  /* position: relative; */
 }
 .box img {
   height: 45vh;
@@ -18,7 +18,7 @@ body {
   width: auto;
   float: right;
 }
-.wine {
+.navi {
   padding-left: 5vw;
   height: 45vh;
   min-height: 200px;
@@ -26,7 +26,8 @@ body {
   display: table;
 }
 
-.wine div{
+.navi div{
+  position: relative;
   padding-top: 30px;
   padding-left: 6vw;
   display: table-cell;
@@ -34,19 +35,40 @@ body {
   color: white;
   font-size: 42px;
   line-height: 0.7;
+  font-display: right;
 }
 
 #menu{
-  padding-bottom: 10px;
+  padding-bottom: 20px;
 }
 
 #menu .btn_group{
-  padding-right: 5%;
+  padding-right: 10px;
   padding-top: 10%;
 }
+
+#menu .backbutton{
+  border: none;
+  padding: 5px 15px;
+  background-color: white;
+  font-weight: 800;
+  font-size: 20px;
+}
+
+#menu .arrow{
+  width: 20px;
+  height: auto;
+}
+
 #menu .btn_group .btn{
-  float: right;
-  margin-right: 2px;
+  float: inline-end;
+  margin-left: 5px;
+  border: none;
+  padding: 5px 15px;
+  border-radius: 10px;
+  box-shadow: 0 0 0 1px gray;
+  text-decoration: none;
+  font-weight: 500;
 }
 
 #drinks{

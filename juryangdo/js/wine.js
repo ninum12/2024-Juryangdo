@@ -64,11 +64,8 @@ let wines = [
     tastingNote:'윤기가 흐르는 가넷의 붉은 빛을 띠고 붉은 딸기류 과일향이 진하고 향기롭다. 집약된 과실의 맛이 느껴지며, 부드러운 탄닌의 매끄러운 질감과 균형 잡힌 구조감을 지닌 와인이다.',
   }
 ]
-
+const myAlchol = localStorage.getItem(My_Alchol);
 const drinksList = document.getElementById("drinks");
-const myAlchol = 40; //입력받을값
-const alcholList = document.getElementsByClassName("alchol");
-const resultList = []
 
 //잔 계산하기
 function calculateWine(wine){

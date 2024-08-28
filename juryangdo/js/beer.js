@@ -41,10 +41,8 @@ let beers = [
   }
 ]
 
+const myAlchol = localStorage.getItem(My_Alchol);
 const drinksList = document.getElementById("drinks");
-const myAlchol = 40; //입력받을값
-const alcholList = document.getElementsByClassName("alchol");
-const resultList = []
 
 //잔 계산하기
 function calculateBeer(beer){
