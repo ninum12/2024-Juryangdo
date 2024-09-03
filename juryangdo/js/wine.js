@@ -93,12 +93,47 @@ function paintDrink(drink, rownumber){
   const item = document.createElement("div");
   item.className = 'item';
 
+  const scriptbox = document.createElement("div");
+  scriptbox.className = 'scriptbox';
+  scriptbox.style.display = 'none';
+
+  const script = document.createElement("div");
+  script.className = 'script';
+  if (drink.type == 'white'){
+    var typetext = '화이트와인'
+  }else{
+    var typetext = '레드와인'
+  }
+  script.innerHTML = `국가: ${drink.contry}<br>${typetext}<br>주종: ${drink.category}<br>용량: ${drink.bottle}ml<br>도수: ${drink.alchol}%<br>당도: ${drink.sweet}<br>산도: ${drink.acid}<br>바디: ${drink.body}<br>탄닌: ${drink.tannin}<br>특징: ${drink.tastingNote}`;
+
   const plusbox = document.createElement("div");
   plusbox.className = 'plusbox';
 
   const plusbtn = document.createElement("button");
   plusbtn.className = 'plusbtn';
-  plusbtn.innerText = '+'
+  plusbtn.innerText = '+';
+  plusbtn.type = 'button';
+  plusbtn.addEventListener("click", () =>{
+    if (plusbtn.innerText == '+') {
+      plusbtn.innerText = '-';
+      item.style.display ='none';
+      scriptbox.style.display = 'block';
+    }else{
+      plusbtn.innerText = '+'
+      scriptbox.style.display = 'none';
+      item.style.display ='block';
+    }
+  });
+  // plusbtn.addEventListener("focus", () =>{
+  //   plusbtn.innerText = '-';
+  //   item.style.display ='none';
+  //   scriptbox.style.display = 'block';
+  // });
+  plusbtn.addEventListener("blur", () =>{
+    plusbtn.innerText = '+'
+    scriptbox.style.display = 'none';
+    item.style.display ='block';
+  });
 
   const firstbox = document.createElement("div");
   firstbox.className = 'firstbox';
@@ -154,16 +189,12 @@ function paintDrink(drink, rownumber){
   const glassintext = document.createElement("div");
   glassintext.className = 'intext';
 
-  const glassboldtext = document.createElement("b");
-
   const guide = document.createElement("div");
   guide.className = 'guide';
   guide.innerText = '잔 마실 수 있어요'
 
   const bottleintext = document.createElement("div");
   bottleintext.className = 'intext';
-
-  const bottleboldtext = document.createElement("b");
 
   const bottleguide = document.createElement("div");
   bottleguide.className = 'guide';
@@ -189,18 +220,16 @@ function paintDrink(drink, rownumber){
 
     const number = Math.round((leftcalresult - countGlass)*10);
 
-    bottleboldtext.innerText = countBottle;
+    bottleintext.innerHTML = `<b>${countBottle}</b>`;
     guidetext.appendChild(bottleintext);
-    bottleintext.appendChild(bottleboldtext);
     guidetext.appendChild(bottleguide);
 
     if(number != 0){
       leftoverImage.src = `juryangdo/glassimg/wine${number}.png`;
       glassbox.appendChild(leftoverImage);
 
-      glassboldtext.innerText = leftcalresult;
+      glassintext.innerHTML = `<b>${leftcalresult}</b>`;
       guidetext.appendChild(glassintext);
-      glassintext.appendChild(glassboldtext);
       guidetext.appendChild(guide);
     }else{
       bottleguide.innerText = bottleguide.innerText + '마실 수 있어요';
@@ -220,13 +249,13 @@ function paintDrink(drink, rownumber){
       glassbox.appendChild(leftoverImage);
     }
 
-    glassboldtext.innerText = drink.calresult;
+    glassintext.innerHTML = `<b>${drink.calresult}</b>`;
     guidetext.appendChild(glassintext);
-    glassintext.appendChild(glassboldtext);
     guidetext.appendChild(guide);
   }
 
   itembox.appendChild(item);
+  itembox.appendChild(scriptbox);
   itembox.appendChild(plusbox);
   item.appendChild(firstbox);
   item.appendChild(secondbox);
@@ -240,6 +269,7 @@ function paintDrink(drink, rownumber){
   namebox.appendChild(name2);
   secondbox.appendChild(glassbox);
   secondbox.appendChild(guidetext);
+  scriptbox.appendChild(script);
   plusbox.appendChild(plusbtn);
 }
 for (var i = 0; i < wines.length; i++){

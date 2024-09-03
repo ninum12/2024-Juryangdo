@@ -115,7 +115,7 @@ btn1.addEventListener("click", function(event) {
     const myAlchol = Math.floor((360 * bottle + 50 * glass ) * 0.16 * 0.7947 * 10) / 10;
     localStorage.setItem(My_Alchol, myAlchol);
 
-    location.href='beerpage.html';
+    location.href='sojupage.html';
   }
 
   const btn3 = document.getElementById("confirm");
@@ -136,7 +136,7 @@ btn2.addEventListener("click", function(event) {
     const myAlchol = Math.floor(bottle * glass * 0.05 * 0.7947 * 10) / 10;
     localStorage.setItem(My_Alchol, myAlchol);
 
-    location.href='beerpage.html';
+    location.href='sojupage.html';
   }
 
   const btn3 = document.getElementById("confirm");

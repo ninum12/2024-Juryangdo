@@ -53,6 +53,28 @@ let beers = [
     volume: 500,
     where: '편의점',
     tastingNote:''
+  },
+  {
+    id:306,
+    titleKO:'테라',
+    contry:'한국',
+    alchol: 4.6,
+    calresult: 0,
+    category: '라거',
+    volume: 500,
+    where: '편의점',
+    tastingNote:''
+  },
+  {
+    id:307,
+    titleKO:'클라우드',
+    contry:'한국',
+    alchol: 5,
+    calresult: 0,
+    category: '라거',
+    volume: 500,
+    where: '편의점',
+    tastingNote:''
   }
 ]
 
@@ -69,7 +91,15 @@ function calculateBeer(beer){
 for (var i = 0; i < beers.length; i++){
   beers[i].calresult = Math.round(calculateBeer(beers[i]) * 10)/ 10;
 }
-
+function change() {
+  const plusbtn = document.getElementsByClassName("plusbtn");
+  if (plusbtn.innerText == '+') {
+    plusbtn.innerText = '-';
+  }else{
+    plusbtn.innerText = '+'
+  }
+  console.log('1');
+}
 // 술 정보 나열하기
 function paintDrink(drink, rownumber){
   const row = document.getElementById(`rowbox${rownumber}`);
@@ -81,12 +111,42 @@ function paintDrink(drink, rownumber){
   const item = document.createElement("div");
   item.className = 'item';
 
+  const scriptbox = document.createElement("div");
+  scriptbox.className = 'scriptbox';
+  scriptbox.style.display = 'none';
+
+  const script = document.createElement("div");
+  script.className = 'script';
+  script.innerHTML = `국가: ${drink.contry}<br>주종: ${drink.category}<br>용량: 캔 | ${drink.volume}ml<br>도수: ${drink.alchol}%<br>특징: ${drink.tastingNote}`;
+
   const plusbox = document.createElement("div");
   plusbox.className = 'plusbox';
 
   const plusbtn = document.createElement("button");
   plusbtn.className = 'plusbtn';
-  plusbtn.innerText = '+'
+  plusbtn.innerText = '+';
+  plusbtn.type = 'button';
+  plusbtn.addEventListener("click", () =>{
+    if (plusbtn.innerText == '+') {
+      plusbtn.innerText = '-';
+      item.style.display ='none';
+      scriptbox.style.display = 'block';
+    }else{
+      plusbtn.innerText = '+'
+      scriptbox.style.display = 'none';
+      item.style.display ='block';
+    }
+  });
+  // plusbtn.addEventListener("focus", () =>{
+  //   plusbtn.innerText = '-';
+  //   item.style.display ='none';
+  //   scriptbox.style.display = 'block';
+  // });
+  plusbtn.addEventListener("blur", () =>{
+    plusbtn.innerText = '+'
+    scriptbox.style.display = 'none';
+    item.style.display ='block';
+  });
 
   const firstbox = document.createElement("div");
   firstbox.className = 'firstbox';
@@ -134,10 +194,8 @@ function paintDrink(drink, rownumber){
   const leftoverImage = document.createElement("img");
   leftoverImage.className = 'glass';
 
-  const glassintext = document.createElement("div");
-  glassintext.className = 'intext';
-
-  const glassboldtext = document.createElement("b");
+  const intext = document.createElement("div");
+  intext.className = 'intext';
 
   const guide = document.createElement("div");
   guide.className = 'guide';
@@ -221,12 +279,12 @@ function paintDrink(drink, rownumber){
       glassbox.appendChild(leftoverImage);
     }
 
-    glassboldtext.innerText = drink.calresult;
-    guidetext.appendChild(glassintext);
-    glassintext.appendChild(glassboldtext);
+    intext.innerHTML = `<b>${drink.calresult}</b>`;
+    guidetext.appendChild(intext);
     guidetext.appendChild(guide);
 
   itembox.appendChild(item);
+  itembox.appendChild(scriptbox);
   itembox.appendChild(plusbox);
   item.appendChild(firstbox);
   item.appendChild(secondbox);
@@ -240,6 +298,7 @@ function paintDrink(drink, rownumber){
   namebox.appendChild(name2);
   secondbox.appendChild(glassbox);
   secondbox.appendChild(guidetext);
+  scriptbox.appendChild(script);
   plusbox.appendChild(plusbtn);
 }
 for (var i = 0; i < beers.length; i++){
