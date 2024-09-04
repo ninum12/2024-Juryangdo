@@ -162,14 +162,14 @@ function paintDrink(drink, rownumber){
 
   const flag = document.createElement("img");
   flag.className = 'flag';
-  flag.src = `juryangdo/flag/${drink.contry}.png`;
+  flag.src = `juryangdo/flag/${drink.contry}.webp`;
 
   const outcircle = document.createElement("div");
   outcircle.className = 'outcircle';
 
   const drinkImage = document.createElement("img");
   drinkImage.className = 'drinkImage';
-  drinkImage.src = `juryangdo/img/${drink.id}.png`;
+  drinkImage.src = `juryangdo/img/${drink.id}.webp`;
 
   const incircle = document.createElement("div");
   incircle.className = 'incircle';
@@ -270,12 +270,12 @@ function paintDrink(drink, rownumber){
     for (var i = 0; i < count; i++){
       const glassImage = document.createElement("img");
       glassImage.className = 'glass';
-      glassImage.src = 'juryangdo/glassimg/beer10.png';
+      glassImage.src = 'juryangdo/glassimg/beer10.webp';
       glassbox.appendChild(glassImage);
     }
     const number = Math.round((drink.calresult - count)*10);
     if(number != 0){
-      leftoverImage.src = `juryangdo/glassimg/beer${number}.png`;
+      leftoverImage.src = `juryangdo/glassimg/beer${number}.webp`;
       glassbox.appendChild(leftoverImage);
     }
 

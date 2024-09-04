@@ -71,7 +71,7 @@ function paintDrink(drink, rownumber){
 
   const script = document.createElement("div");
   script.className = 'script';
-  script.innerHTML = `국가: ${drink.mfg}<br>주종: ${drink.category}<br>용량: ${drink.bottle}ml<br>도수: ${drink.alchol}%<br>특징: ${drink.tastingNote}`;
+  script.innerHTML = `제조사: ${drink.mfg}<br>주종: ${drink.category}<br>용량: ${drink.bottle}ml<br>도수: ${drink.alchol}%<br>특징: ${drink.tastingNote}`;
 
   const plusbox = document.createElement("div");
   plusbox.className = 'plusbox';
@@ -116,14 +116,14 @@ function paintDrink(drink, rownumber){
 
   // const flag = document.createElement("img");
   // flag.className = 'flag';
-  // flag.src = `juryangdo/flag/${drink.mfg}.png`;
+  // flag.src = `juryangdo/flag/${drink.mfg}.webp`;
 
   const outcircle = document.createElement("div");
   outcircle.className = 'outcircle';
 
   const drinkImage = document.createElement("img");
   drinkImage.className = 'drinkImage';
-  drinkImage.src = `juryangdo/img/${drink.id}.png`;
+  drinkImage.src = `juryangdo/img/${drink.id}.webp`;
 
   const incircle = document.createElement("div");
   incircle.className = 'incircle';
@@ -170,13 +170,13 @@ function paintDrink(drink, rownumber){
     for (var i = 0; i < countBottle; i++){
       const bottleImage = document.createElement("img");
       bottleImage.className = 'glass';
-      bottleImage.src = "juryangdo/glassimg/bottle.png";
+      bottleImage.src = "juryangdo/glassimg/bottle.webp";
       glassbox.appendChild(bottleImage);
     }
     for (var i = 0; i < countGlass; i++){
       const glassImage = document.createElement("img");
       glassImage.className = 'glass';
-      glassImage.src = "juryangdo/glassimg/soju10.png";
+      glassImage.src = "juryangdo/glassimg/soju10.webp";
       glassbox.appendChild(glassImage);
     }
 
@@ -187,7 +187,7 @@ function paintDrink(drink, rownumber){
     guidetext.appendChild(bottleguide);
 
     if(number != 0){
-      leftoverImage.src = `juryangdo/glassimg/soju${number}.png`;
+      leftoverImage.src = `juryangdo/glassimg/soju${number}.webp`;
       glassbox.appendChild(leftoverImage);
       
       glassintext.innerHTML = `<b>${leftcalresult}</b>`;
@@ -202,12 +202,12 @@ function paintDrink(drink, rownumber){
     for (var i = 0; i < count; i++){
       const glassImage = document.createElement("img");
       glassImage.className = 'glass';
-      glassImage.src = "juryangdo/glassimg/soju10.png";
+      glassImage.src = "juryangdo/glassimg/soju10.webp";
       glassbox.appendChild(glassImage);
     }
     const number = Math.round((drink.calresult - count)*10);
     if(number != 0){
-      leftoverImage.src = `juryangdo/glassimg/soju${number}.png`;
+      leftoverImage.src = `juryangdo/glassimg/soju${number}.webp`;
       glassbox.appendChild(leftoverImage);
     }
 

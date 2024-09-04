@@ -153,7 +153,7 @@ function paintDrink(drink, rownumber){
 
   const flag = document.createElement("img");
   flag.className = 'flag';
-  flag.src = `juryangdo/flag/${drink.contry}.png`;
+  flag.src = `juryangdo/flag/${drink.contry}.webp`;
 
   const outcircle = document.createElement("div");
   outcircle.className = 'outcircle';
@@ -161,7 +161,7 @@ function paintDrink(drink, rownumber){
 
   const drinkImage = document.createElement("img");
   drinkImage.className = 'drinkImage';
-  drinkImage.src = `juryangdo/img/${drink.id}.png`;
+  drinkImage.src = `juryangdo/img/${drink.id}.webp`;
 
   const incircle = document.createElement("div");
   incircle.className = 'incircle';
@@ -208,13 +208,13 @@ function paintDrink(drink, rownumber){
     for (var i = 0; i < countBottle; i++){
       const bottleImage = document.createElement("img");
       bottleImage.className = 'glass';
-      bottleImage.src = "juryangdo/glassimg/bottle.png";
+      bottleImage.src = "juryangdo/glassimg/bottle.webp";
       glassbox.appendChild(bottleImage);
     }
     for (var i = 0; i < countGlass; i++){
       const glassImage = document.createElement("img");
       glassImage.className = 'glass';
-      glassImage.src = "juryangdo/glassimg/wine10.png";
+      glassImage.src = "juryangdo/glassimg/wine10.webp";
       glassbox.appendChild(glassImage);
     }
 
@@ -225,7 +225,7 @@ function paintDrink(drink, rownumber){
     guidetext.appendChild(bottleguide);
 
     if(number != 0){
-      leftoverImage.src = `juryangdo/glassimg/wine${number}.png`;
+      leftoverImage.src = `juryangdo/glassimg/wine${number}.webp`;
       glassbox.appendChild(leftoverImage);
 
       glassintext.innerHTML = `<b>${leftcalresult}</b>`;
@@ -240,12 +240,12 @@ function paintDrink(drink, rownumber){
     for (var i = 0; i < count; i++){
       const glassImage = document.createElement("img");
       glassImage.className = 'glass';
-      glassImage.src = "juryangdo/glassimg/wine10.png";
+      glassImage.src = "juryangdo/glassimg/wine10.webp";
       glassbox.appendChild(glassImage);
     }
     const number = Math.round((drink.calresult - count)*10);
     if(number != 0){
-      leftoverImage.src = `juryangdo/glassimg/wine${number}.png`;
+      leftoverImage.src = `juryangdo/glassimg/wine${number}.webp`;
       glassbox.appendChild(leftoverImage);
     }
 
