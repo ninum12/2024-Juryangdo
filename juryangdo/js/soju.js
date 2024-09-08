@@ -1,16 +1,6 @@
 let sojus = [
   {
-    id:201,
-    titleKO:'진로',
-    alchol: 16,
-    calresult: 0,
-    category: '소주',
-    bottle: 360,
-    mfg:'하이트진로',
-    tastingNote:''
-  },
-  {
-    id:202,
+    id:101,
     titleKO:'처음처럼',
     alchol: 16.5,
     calresult: 0,
@@ -20,7 +10,17 @@ let sojus = [
     tastingNote:'대나무 숯 정제로 이슬같은 깨끗함'
   },
   {
-    id:203,
+    id:102,
+    titleKO:'진로',
+    alchol: 16,
+    calresult: 0,
+    category: '소주',
+    bottle: 360,
+    mfg:'하이트진로',
+    tastingNote:'제로슈거 및 알코올 도수 16도의 진로 오리지널 레시피를 완성하여 초깔끔하고 부드러운 목넘김을 한층 강화'
+  },
+  {
+    id:103,
     titleKO:'톡소다 석류',
     alchol: 5,
     calresult: 0,
@@ -30,7 +30,7 @@ let sojus = [
     tastingNote:'상큼한 과즙과 청량한 탄산이 어우러진 무학의 과일 리큐르 제품입니다. 라인업: 석류/블루베리/사과/파인애플/레몬/트로피칼'
   },
   {
-    id:204,
+    id:104,
     titleKO:'별빛청하 스파클링',
     alchol: 7,
     calresult: 0,

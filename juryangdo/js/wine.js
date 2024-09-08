@@ -1,6 +1,6 @@
 let wines = [
   {
-    id:101,
+    id:301,
     titleKO:'두르뜨, 그랑 떼루아',
     category:'소테른',
     title:'Dourthe, Grands Terroirs Sauternes',
@@ -17,7 +17,7 @@ let wines = [
     tastingNote:'진한 노란색을 띠며 살구나 자몽 등 농익은 과일향과 아카시아 꽃, 꿀향이 피어오른다. 입 아네서는 진한 풍미화 함께 적절한 산도가 조화를 이루는 달콤한 디저트 와인이다.'
   },
   {
-    id:102,
+    id:302,
     titleKO:'덕혼',
     category:'디코이 샤도네이',
     title:'Duckhorn, Decoy Chardonnay',
@@ -34,7 +34,7 @@ let wines = [
     tastingNote:'푸른 사과와 자몽, 아카시아의 사랑스러운 향을 가지고 있다. 이에 더불어 젖은 돌 느낌의 미네랄 풍미가 생생한 산도와 어우러져 와인의 품격을 한층 높여준다.'
   },
   {
-    id:103,
+    id:303,
     titleKO:'브레드&버터',
     category:'피노 누아',
     title:'Bread&Butter, Pinot Noir',
@@ -51,7 +51,7 @@ let wines = [
     tastingNote:'선명한 루비색을 띠며 입 안에서는 달콤한 잘익은 베리류의 풍미가 감칠맛과 함께 입안 전체를 감돌며 부드러운 타닌과 함께 길게 이어지는 와인이다.',
   },
   {
-    id:104,
+    id:304,
     titleKO:'카스텔라레',
     category:'키안티 클라시코',
     title:'Castellare, Chianti Classico',

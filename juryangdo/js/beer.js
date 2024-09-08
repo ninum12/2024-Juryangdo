@@ -1,6 +1,6 @@
 let beers = [
   {
-    id:301,
+    id:201,
     titleKO:'아사히 수퍼드라이',
     contry:'일본',
     alchol: 5,
@@ -8,10 +8,10 @@ let beers = [
     category: '페일 라거',
     volume: 500,
     where: '편의점',
-    tastingNote:''
+    tastingNote:'마시는 순간 목 넘김에서 빠르게 느껴지는 맥주의 풍미와 마지막까지 느껴지는 깔끔한 맛'
   },
   {
-    id:302,
+    id:202,
     titleKO:'버드 와이저',
     contry:'미국',
     alchol: 5.4,
@@ -19,10 +19,10 @@ let beers = [
     category: '라거',
     volume: 500,
     where: '편의점',
-    tastingNote:''
+    tastingNote:"1876년 탄생한 아메리칸 스타일의 프리미엄 라거. 오랜 발효 시간과 공을 들인 양조 과정으로 특유의 부드러운 목넘김이 특징"
   },
   {
-    id:303,
+    id:203,
     titleKO:'필스너 우르켈',
     contry:'체코',
     alchol: 4.4,
@@ -30,21 +30,10 @@ let beers = [
     category: '페일 라거',
     volume: 500,
     where: '편의점',
-    tastingNote:''
+    tastingNote:'상쾌하고 풍부하며 적절한 양의 호피 쓴맛'
   },
   {
-    id:304,
-    titleKO:'곰표 밀맥주',
-    contry:'한국',
-    alchol: 4.5,
-    calresult: 0,
-    category: '밀맥주',
-    volume: 500,
-    where: '편의점',
-    tastingNote:''
-  },
-  {
-    id:305,
+    id:204,
     titleKO:'카스 프레시',
     contry:'한국',
     alchol: 4.5,
@@ -52,10 +41,10 @@ let beers = [
     category: '라거',
     volume: 500,
     where: '편의점',
-    tastingNote:''
+    tastingNote:'콜드브루 공법을 통해 맥주의 상쾌함과 깔끔한 맛을 한층 더 극대화한 톡 쏘고 상쾌한 맛'
   },
   {
-    id:306,
+    id:205,
     titleKO:'테라',
     contry:'한국',
     alchol: 4.6,
@@ -63,10 +52,10 @@ let beers = [
     category: '라거',
     volume: 500,
     where: '편의점',
-    tastingNote:''
+    tastingNote:'세계 공기질 부문 1위 호주에서 자란 청정맥아와 오직 발효공정에서 나오는 리얼탄산을 100% 사용하여 거품은 조밀하고 탄산은 오래 지속'
   },
   {
-    id:307,
+    id:206,
     titleKO:'클라우드',
     contry:'한국',
     alchol: 5,
@@ -74,7 +63,7 @@ let beers = [
     category: '라거',
     volume: 500,
     where: '편의점',
-    tastingNote:''
+    tastingNote:'100% 발효원액에 추가로 물을 타지 않은 오리지널 그래비티 공법으로 만들어 맛이 깊고 풍부한 맥주'
   }
 ]
 
@@ -117,7 +106,7 @@ function paintDrink(drink, rownumber){
 
   const script = document.createElement("div");
   script.className = 'script';
-  script.innerHTML = `국가: ${drink.contry}<br>주종: ${drink.category}<br>용량: 캔 | ${drink.volume}ml<br>도수: ${drink.alchol}%<br>특징: ${drink.tastingNote}`;
+  script.innerHTML = `국가: ${drink.contry}<br>주종: ${drink.category}<br>용량: ${drink.volume}ml<br>도수: ${drink.alchol}%<br>특징: ${drink.tastingNote}`;
 
   const plusbox = document.createElement("div");
   plusbox.className = 'plusbox';

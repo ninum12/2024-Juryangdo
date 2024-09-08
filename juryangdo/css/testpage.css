@@ -17,7 +17,6 @@ body{
 .containBox {
   /* border: 2px solid black; */
   border-radius: 4px;
-  
   margin: 0 1px 0 1px;
   display: grid;
   grid-template-rows: repeat(32, minmax(0,1fr));
@@ -197,15 +196,33 @@ body{
 }
 #confirm{
   border : 0;
-  text-align: right;
+  /* text-align: right; */
+  place-content: end;
   width: 60vh;
   height: 4vh;
   /* font-family: '양진체'; */
   font-family: 'PTBandocheB';
   font-size: 2.5vh;
   background-color: #D9D9D9;
+  display: grid;
+  place-content: end;
+  grid-template-rows: 1fr;
 }
-
+#confirm div{
+  display: flex;
+}
+#confirm #arrowright{
+  width: auto;
+  height: 4vh;
+  margin-right: -1vh;
+  /* margin-bottom: 0.3vh; */
+}
+#btntext{
+  font-family: 'PTBandocheB';
+  font-size: 2.5vh;
+  margin-right: 1vh;
+  margin-top: 0.6vh;
+}
 
 #leftbox{
   margin-right: -0.8vh;
@@ -237,6 +254,26 @@ body{
   border: 0.4vh solid #D9D9D9;
   border-radius: 5px;
   /* margin: 0 -0.2vh 0 -0.1vh; */
+}
+#leftbox .rectangle1 button{
+  border: 0;
+  height: 3.99vh;
+  background-color: white;
+}
+#leftbox .rectangle1 button div{
+  display: flex;
+  margin-left: 0.4vh;
+}
+#leftbox .rectangle1 #arrow{
+  width: auto;
+  height: 3vh;
+  /* margin-bottom: 0.3vh; */
+}
+#leftbox .rectangle1 #back{
+  font-family: 'PTBandocheB';
+  font-size: 2.5vh;
+  margin-left: 1vh;
+  margin-top: 0.2vh;
 }
 
 .rectangle2{
@@ -318,7 +355,7 @@ body{
   place-content: center;
   text-align: center;
   font-family: 'Pretendard';
-  font-weight: 500;
+  font-weight: light;
   font-size: 2vh;
 }
 #leftbox .itembox{
@@ -342,7 +379,6 @@ body{
   border-radius: 5px;
   display: grid;
   place-content: center;
-  
 }
 #rightbox .itembox{
   display: grid;

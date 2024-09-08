@@ -37,12 +37,24 @@ function paintSojuInput(){
   const confirm = document.createElement("button");
   confirm.type = "button"
   confirm.id = "confirm";
-  confirm.innerText = "결과 확인하기 >";
+  
+  const blankdiv = document.createElement("div");
+  
+  const btntext = document.createElement("div");
+  btntext.innerText = "결과 확인하기";
+  btntext.id = 'btntext';
+
+  const arrowright = document.createElement("img");
+  arrowright.src = 'juryangdo/img/arrowright.webp';
+  arrowright.id = 'arrowright';
 
   div.appendChild(bottleOption);
   div.appendChild(bottleDiv);
   div.appendChild(glassOption);
   div.appendChild(glassDiv);
+  confirm.appendChild(blankdiv);
+  blankdiv.appendChild(btntext);
+  blankdiv.appendChild(arrowright);
   document.querySelector("#confirmbox").append(confirm);
   document.querySelector("#inputbox").append(div);
 }
@@ -88,7 +100,16 @@ function paintBeerInput(){
   const confirm = document.createElement("button");
   confirm.type = "button"
   confirm.id = "confirm";
-  confirm.innerText = "결과 확인하기 >";
+  
+  const blankdiv = document.createElement("div");
+  
+  const btntext = document.createElement("div");
+  btntext.innerText = "결과 확인하기";
+  btntext.id = 'btntext';
+
+  const arrowright = document.createElement("img");
+  arrowright.src = 'juryangdo/img/arrowright.webp';
+  arrowright.id = 'arrowright';
   
   selectGlass.appendChild(firstMl);
   selectGlass.appendChild(secondMl);
@@ -97,6 +118,9 @@ function paintBeerInput(){
   div.appendChild(glassMl);
   div.appendChild(numberOption);
   div.appendChild(glassDiv);
+  confirm.appendChild(blankdiv);
+  blankdiv.appendChild(btntext);
+  blankdiv.appendChild(arrowright);
   document.querySelector("#confirmbox").append(confirm);
   document.querySelector("#inputbox").append(div);
 }
