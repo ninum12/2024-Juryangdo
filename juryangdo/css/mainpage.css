@@ -159,12 +159,9 @@ body {
     /* border: 0.4vw solid black;
     border-radius: 5px; */
     /* margin-top: 2vw; */
-    font-size: 28vw;
+    font-size: 26vw;
     font-weight: 400;
     /* background-color: antiquewhite; */
-  }
-  #title div {
-    margin-top: 4vw;
   }
   #midbottom {
     margin-left: -0.4vw;
@@ -208,7 +205,7 @@ body {
     background-color: #d9d9d9;
     font-family: "양진체";
     font-weight: 500;
-    font-size: 7vw;
+    font-size: 6vw;
   }
   .confirm div {
     display: flex;
