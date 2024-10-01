@@ -1,5 +1,9 @@
+body {
+  text-decoration: none;
+  color: black;
+}
 @media screen and (max-width: 480px) {
-  body{
+  body {
     margin: 0;
     display: flex;
     place-content: center;
@@ -20,274 +24,206 @@
     width: 100vw;
     /* grid-template-columns: 1fr 1.28fr; */
   }
-  #leftbox #lefttop, .rectangle{
+
+  #leftbox,
+  #rightbox {
     display: none;
   }
-  #rightbox .rectangle{
-    display: none;
-  }
-  #rightbox .containbox .column{
-    display: none;
-  }
-  #rightbox .containbox #rightbottom .alcholbox{
-    display: none;
-  }
-  #midbox{
-    height: 75vh;
-    border: 0.4vw solid black;
+  #midbox {
+    height: 70.8vh;
     border-left: none;
     border-right: none;
     display: grid;
-    grid-template-rows: repeat(30, minmax(0,1fr));
+    grid-template-rows: repeat(30, minmax(0, 1fr));
   }
-  #midbox .itembox{
-    grid-row: 1/10;
+  #midbox .itembox {
+    grid-row: 1/11;
     grid-column: 1;
     display: grid;
     grid-template-columns: 2.3fr 1fr;
   }
-  #midbox .itembox .boxtwo{
+  #midbox .itembox .boxtwo {
     display: grid;
     grid-column: 1;
-    grid-template-rows: 1fr 3fr;
+    grid-template-rows: 1fr 3.8fr;
     /* background-color: rgb(179, 179, 230); */
   }
-  .boxtwo .rowblank{
+  .boxtwo .rowblank {
     /* height: 20vw; */
-    border: 0.6vw solid black;
+    border: 0.5vw solid black;
     /* border-radius: 5px; */
     border-radius: 5px 0 0 5px;
     border-right: 0;
     margin-left: -0.4vw;
   }
-  .boxtwo .items{
+  .boxtwo .items {
     display: grid;
     margin-top: -0.4vw;
     /* margin-left: -0.2vw; */
     grid-template-columns: 1fr 1.2fr 1.2fr 1.2fr;
     /* background-color: rgb(151, 132, 169); */
   }
-  .boxtwo .items .item{
+  .boxtwo .items .item {
     margin-left: -0.3vw;
     display: grid;
     border-radius: 5px;
-    grid-template-rows: repeat(14,minmax(0, 1fr));
+    grid-template-rows: repeat(14, minmax(0, 1fr));
   }
-  #bottlebox .text{
+  #bottlebox .text {
     grid-row: 1/3;
   }
-  #bottlebox .imgbox{
+  #bottlebox .imgbox {
     grid-row: 3/15;
   }
-  #winebox .text{
+  #winebox .text {
     grid-row: 1/5;
   }
-  #winebox .imgbox{
+  #winebox .imgbox {
     grid-row: 5/15;
   }
-  #beerbox .text{
+  #beerbox .text {
     grid-row: 1/7;
   }
-  #beerbox .imgbox{
+  #beerbox .imgbox {
     grid-row: 7/15;
   }
-  #sojubox .text{
+  #sojubox .text {
     grid-row: 1/10;
   }
-  #sojubox .imgbox{
+  #sojubox .imgbox {
     grid-row: 10/15;
   }
-  .imgbox{
+  .imgbox {
     display: grid;
     place-content: center;
-    border: 0.6vw solid black;
+    border: 0.5vw solid black;
     margin-top: -0.4vw;
     border-radius: 5px;
   }
-  #bottlebox .imgbox img{
+  #bottlebox .imgbox img {
     margin-top: 1vw;
     height: 20vw;
     width: auto;
   }
-  #winebox .imgbox img{
+  #winebox .imgbox img {
     height: 17.6vw;
     width: auto;
   }
-  #beerbox .imgbox img{
+  #beerbox .imgbox img {
     height: 14vw;
     width: auto;
   }
-  #sojubox .imgbox img{
+  #sojubox .imgbox img {
     margin-top: 1vw;
     height: 7vw;
     width: auto;
   }
-  #midbox .itembox .items .item .text{
-    border: 0.6vw solid black;
+  #midbox .itembox .items .item .text {
+    border: 0.5vw solid black;
     /* margin-top: -0.2vw; */
     border-radius: 5px;
     display: grid;
     place-content: center;
-    font-family: 'NanumBarunpen';
-    font-size: 4vw;
-    background-color: #D9D9D9;
+    font-family: "NanumBarunpen";
+    font-size: 5vw;
+    background-color: #d9d9d9;
   }
-  #beerbox .text div{
-    margin-top: 3vw;
+  #beerbox .text div {
+    margin-top: 8vw;
   }
-  #sojubox .text div{
-    margin-top: 10vw;
+  #sojubox .text div {
+    margin-top: 16vw;
   }
-  #midbox .textbox{
-    font-size: 2vw;
-    background-color: #D9D9D9;
+  #midbox .textbox {
+    background-color: #d9d9d9;
     grid-column: 2;
-    border: 0.6vw solid black;
+    border: 0.5vw solid black;
     border-radius: 5px;
     margin-left: -0.3vw;
     display: grid;
     place-content: end;
     justify-content: left;
   }
-  .textbox div{
-    font-size: 4vw;
-    font-family: 'Pretendard';
+  .textbox div {
+    font-size: 5vw;
+    font-family: "Pretendard";
     font-weight: 500;
     margin-left: 4vw;
     margin-bottom: 2vw;
   }
-  #title{
-    grid-row: 10/23;
+  #title {
+    grid-row: 11/23;
     display: grid;
     place-content: center;
-    font-family: '양진체';
+    font-family: "양진체";
     /* border: 0.4vw solid black;
     border-radius: 5px; */
     /* margin-top: 2vw; */
-    font-size: 24vw;
+    font-size: 28vw;
     font-weight: 400;
     /* background-color: antiquewhite; */
   }
-  #title div{
+  #title div {
     margin-top: 4vw;
   }
-  #midbottom{
+  #midbottom {
     margin-left: -0.4vw;
     grid-row: 23/31;
     display: grid;
     grid-template-columns: 1fr 1.6fr;
   }
-  .warn{
-    border: 0.6vw solid black;
+  .warn {
+    border: 0.5vw solid black;
     border-radius: 5px;
     /* background-color: rgb(172, 219, 203); */
     font-size: 3.2vw;
-    font-family: 'Pretendard';
+    font-family: "Pretendard";
     font-weight: light;
     display: grid;
     place-content: center;
     text-align: center;
   }
-  .confirmbox{
+  .confirmbox {
     display: grid;
-    grid-template-rows: 1.6fr 1fr;
+    grid-template-rows: 1.5fr 1fr;
   }
-  .guide{
+  .guide {
     margin-left: -0.4vw;
     margin-bottom: -0.4vw;
-    border: 0.6vw solid black;
+    border: 0.5vw solid black;
     border-radius: 5px;
-    background-color: #D9D9D9;
-    font-family: 'Pretendard';
+    background-color: #d9d9d9;
+    font-family: "Pretendard";
     font-weight: 600;
     font-size: 4.8vw;
     display: grid;
     place-content: center;
   }
-  .confirm{
+  .confirm {
     display: grid;
     place-content: center;
     margin-left: -0.4vw;
-    border: 0.6vw solid black;
+    border: 0.5vw solid black;
     border-radius: 5px;
-    background-color: #D9D9D9;
-    font-family: '양진체';
+    background-color: #d9d9d9;
+    font-family: "양진체";
     font-weight: 500;
-    font-size: 5.6vw;
+    font-size: 7vw;
   }
-  .confirm div{
+  .confirm div {
     display: flex;
     margin-top: 0.4vw;
     margin-left: 1vw;
   }
-  #arrow{
+  #arrow {
     width: auto;
-    height: 7.2vw;
+    height: 8.4vw;
     margin-left: 1.6vw;
     /* margin-bottom: 0.3vw; */
   }
-  #leftbox{
-    height: 64vh;
-    place-content: end;
-  }
-  #leftbox .itembox{
-    grid-row: 16/31;
-    display: grid;
-    grid-template-rows: 1fr 1fr 1fr;
-    margin-right: 0.2vh;
-  }
-  #leftbox .itembox .items{
-    /* border: 0.4vh solid black; */
-    display: grid;
-    margin-right: -0.2vw;
-    grid-template-columns: repeat(6, minmax(0,1fr));
-  }
-  #leftbox .itembox .items .item1{
-    border: 0.4vw solid black;
-    border-radius: 5px;
-    margin: -0.16vw;
-    background-color: #D9D9D9;
-  }
-  #leftbox .itembox .items .item2{
-    border: 0.4vw solid black;
-    margin: -0.16vw;
-    border-radius: 5px;
-    display: grid;
-    place-content: center;
-  }
-  #leftbox .itembox .items .item2 img{
-    width: auto;
-    height: 10vh;
-    display: absolute;
-    margin: 1vw;
-    /* margin: -1.7vh; */
-    filter: grayscale(100%);
-  }
-
-  #smilebox{
-    height: 69vh;
-    position: relative;
-    z-index: -1;
-    margin-top: 0.4vh;
-    display: grid;
-    /* grid-template-columns: (10, 1fr); */
-    grid-template-columns: repeat(10, 1fr);
-    /* grid-auto-rows: minmax(17px, auto); */
-  }
-  .square{
-    border: 0.4vw solid #D9D9D9;
-    border-radius: 5px;
-    margin: -0.2vw;
-  }
-  .square2{
-    border: 0.4vw solid #D9D9D9;
-    border-radius: 5px;
-    margin: -0.2vw;
-    background-color: #D9D9D9;
-  }
 }
 @media screen and (min-width: 481px) {
-  body{
+  body {
     margin: 0;
     display: flex;
     place-content: center;
@@ -304,17 +240,17 @@
     display: grid;
     grid-template-columns: 1fr 1.28fr;
   }
-  .box{
+  .box {
     display: grid;
-    grid-template-rows: repeat(32, minmax(0,1fr));
+    grid-template-rows: repeat(32, minmax(0, 1fr));
   }
-  #lefttop{
+  #lefttop {
     grid-row: 1/16;
     grid-column: 1;
     display: grid;
     grid-template-columns: 5fr 1fr;
   }
-  .innerbox{
+  .innerbox {
     grid-column: 1;
     display: grid;
     place-content: center;
@@ -322,74 +258,74 @@
     border-radius: 5px;
     margin-right: -0.1vh;
   }
-  .innerbox .circle{
-    background-color: #D9D9D9;
+  .innerbox .circle {
+    background-color: #d9d9d9;
     border-radius: 50%;
     width: 32.8vh;
     height: 32.8vh;
     display: grid;
     place-content: center;
     text-align: center;
-    font-family: 'Pretendard';
+    font-family: "Pretendard";
     font-weight: 500;
     font-size: 2vh;
   }
-  .circle div{
+  .circle div {
     font-size: 14.2vh;
-    font-family: 'KoPubWorldBatang';
+    font-family: "KoPubWorldBatang";
     font-weight: 300;
     margin-top: 0.8vh;
   }
-  #leftbox .column{
-    background-color: #D9D9D9;
+  #leftbox .column {
+    background-color: #d9d9d9;
     border: 0.4vh solid black;
     border-radius: 5px;
     margin-left: -0.1vh;
   }
-  #leftbox .itembox{
+  #leftbox .itembox {
     grid-row: 16/31;
     display: grid;
     grid-template-rows: 1fr 1fr 1fr;
     margin-right: 0.2vh;
   }
-  #leftbox .itembox .items{
+  #leftbox .itembox .items {
     /* border: 0.4vh solid black; */
     display: grid;
-    grid-template-columns: repeat(6, minmax(0,1fr));
+    grid-template-columns: repeat(6, minmax(0, 1fr));
   }
-  #leftbox .itembox .items .item1{
+  #leftbox .itembox .items .item1 {
     border: 0.4vh solid black;
     border-radius: 5px;
     margin: -0.16vh;
-    background-color: #D9D9D9;
+    background-color: #d9d9d9;
   }
-  #leftbox .itembox .items .item2{
+  #leftbox .itembox .items .item2 {
     border: 0.4vh solid black;
     margin: -0.16vh;
     border-radius: 5px;
     display: grid;
     place-content: center;
   }
-  #leftbox .itembox .items .item2 img{
+  #leftbox .itembox .items .item2 img {
     width: auto;
     height: 13vh;
     display: absolute;
     /* margin: -1.7vh; */
     filter: grayscale(100%);
   }
-  #midbox .itembox{
+  #midbox .itembox {
     grid-row: 1/11;
     grid-column: 1;
     display: grid;
     grid-template-columns: 2.3fr 1fr;
   }
-  #midbox .itembox .boxtwo{
+  #midbox .itembox .boxtwo {
     display: grid;
     grid-column: 1;
     /* grid-template-rows: 1fr 1fr; */
     /* background-color: rgb(179, 179, 230); */
   }
-  .boxtwo .rowblank{
+  .boxtwo .rowblank {
     height: 5.6vh;
     border: 0.4vh solid black;
     /* border-radius: 5px; */
@@ -397,87 +333,87 @@
     border-right: 0;
     margin-left: -0.4vh;
   }
-  .boxtwo .items{
+  .boxtwo .items {
     display: grid;
     margin-top: -0.4vh;
     /* margin-left: -0.2vh; */
     grid-template-columns: 1fr 1.2fr 1.2fr 1.2fr;
     /* background-color: rgb(151, 132, 169); */
   }
-  .boxtwo .items .item{
+  .boxtwo .items .item {
     margin-left: -0.3vh;
     display: grid;
     border-radius: 5px;
-    grid-template-rows: repeat(14,minmax(0, 1fr));
+    grid-template-rows: repeat(14, minmax(0, 1fr));
   }
-  #bottlebox .text{
+  #bottlebox .text {
     grid-row: 1/3;
   }
-  #bottlebox .imgbox{
+  #bottlebox .imgbox {
     grid-row: 3/15;
   }
-  #winebox .text{
+  #winebox .text {
     grid-row: 1/5;
   }
-  #winebox .imgbox{
+  #winebox .imgbox {
     grid-row: 5/15;
   }
-  #beerbox .text{
+  #beerbox .text {
     grid-row: 1/7;
   }
-  #beerbox .imgbox{
+  #beerbox .imgbox {
     grid-row: 7/15;
   }
-  #sojubox .text{
+  #sojubox .text {
     grid-row: 1/10;
   }
-  #sojubox .imgbox{
+  #sojubox .imgbox {
     grid-row: 10/15;
   }
-  .imgbox{
+  .imgbox {
     display: grid;
     place-content: center;
     border: 0.4vh solid black;
     margin-top: -0.4vh;
     border-radius: 5px;
   }
-  #bottlebox .imgbox img{
+  #bottlebox .imgbox img {
     margin-top: 1vh;
     height: 20vh;
     width: auto;
   }
-  #winebox .imgbox img{
+  #winebox .imgbox img {
     height: 17.6vh;
     width: auto;
   }
-  #beerbox .imgbox img{
+  #beerbox .imgbox img {
     height: 14vh;
     width: auto;
   }
-  #sojubox .imgbox img{
+  #sojubox .imgbox img {
     margin-top: 1vh;
     height: 7vh;
     width: auto;
   }
-  #midbox .itembox .items .item .text{
+  #midbox .itembox .items .item .text {
     border: 0.4vh solid black;
     /* margin-top: -0.2vh; */
     border-radius: 5px;
     display: grid;
     place-content: center;
-    font-family: 'NanumBarunpen';
+    font-family: "NanumBarunpen";
     font-size: 3vh;
-    background-color: #D9D9D9;
+    background-color: #d9d9d9;
   }
-  #beerbox .text div{
+  #beerbox .text div {
     margin-top: 3vh;
   }
-  #sojubox .text div{
+  #sojubox .text div {
     margin-top: 10vh;
   }
-  #midbox .textbox{
+  #midbox .textbox {
     font-size: 2vh;
-    background-color: #D9D9D9;
+    background-color: #d9d9d9;
     grid-column: 2;
     border: 0.4vh solid black;
     border-radius: 5px;
@@ -486,18 +422,18 @@
     place-content: end;
     justify-content: left;
   }
-  .textbox div{
+  .textbox div {
     font-size: 3vh;
-    font-family: 'Pretendard';
+    font-family: "Pretendard";
     font-weight: 500;
     margin-left: 2vh;
     margin-bottom: 1vh;
   }
-  #title{
+  #title {
     grid-row: 11/23;
     display: grid;
     place-content: center;
-    font-family: '양진체';
+    font-family: "양진체";
     /* border: 0.4vh solid black;
     border-radius: 5px; */
     /* margin-top: 2vh; */
@@ -505,65 +441,65 @@
     font-weight: 400;
     /* background-color: antiquewhite; */
   }
-  #title div{
+  #title div {
     margin-top: 4vh;
   }
-  #midbottom{
+  #midbottom {
     margin-left: -0.4vh;
     grid-row: 23/31;
     display: grid;
     grid-template-columns: 1fr 1.6fr;
   }
-  .warn{
+  .warn {
     border: 0.4vh solid black;
     border-radius: 5px;
     /* background-color: rgb(172, 219, 203); */
     font-size: 2vh;
-    font-family: 'Pretendard';
+    font-family: "Pretendard";
     font-weight: light;
     display: grid;
     place-content: center;
     text-align: center;
   }
-  .confirmbox{
+  .confirmbox {
     display: grid;
     grid-template-rows: 1.6fr 1fr;
   }
-  .guide{
+  .guide {
     margin-left: -0.4vh;
     margin-bottom: -0.4vh;
     border: 0.4vh solid black;
     border-radius: 5px;
-    background-color: #D9D9D9;
-    font-family: 'Pretendard';
+    background-color: #d9d9d9;
+    font-family: "Pretendard";
     font-weight: 600;
     font-size: 3vh;
     display: grid;
     place-content: center;
   }
-  .confirm{
+  .confirm {
     display: grid;
     place-content: center;
     margin-left: -0.4vh;
     border: 0.4vh solid black;
     border-radius: 5px;
-    background-color: #D9D9D9;
-    font-family: '양진체';
+    background-color: #d9d9d9;
+    font-family: "양진체";
     font-weight: 500;
     font-size: 4vh;
   }
-  .confirm div{
+  .confirm div {
     display: flex;
     margin-top: 0.4vh;
     margin-left: 1vh;
   }
-  #arrow{
+  #arrow {
     width: auto;
     height: 5vh;
     margin-left: 1.6vh;
     /* margin-bottom: 0.3vh; */
   }
-  #leftbox .rectangle{
+  #leftbox .rectangle {
     margin-top: -0.2vh;
     grid-row: 31/33;
     /* height: 5.6vh; */
@@ -571,7 +507,7 @@
     border-radius: 5px 0 0 5px;
     border-right: 0;
   }
-  #midbox .rectangle{
+  #midbox .rectangle {
     margin-top: -0.2vh;
     grid-row: 31/33;
     /* height: 5.6vh; */
@@ -579,15 +515,15 @@
     border-radius: 0 5px 5px 0;
     border-left: 0;
   }
-  #rightbox .rectangle{
+  #rightbox .rectangle {
     margin-left: -0.4vh;
     grid-row: 1/3;
     /* height: 5.6vh; */
     border: 0.4vh solid black;
-    border-radius:  0 5px 5px 0;
+    border-radius: 0 5px 5px 0;
     border-left: 0;
   }
-  .containbox{
+  .containbox {
     margin-left: -0.4vh;
     margin-top: -0.4vh;
     grid-row: 3/33;
@@ -595,21 +531,21 @@
     grid-template-columns: 1fr 5fr;
     /* background-color: beige; */
   }
-  #rightbox .column{
-    background-color: #D9D9D9;
+  #rightbox .column {
+    background-color: #d9d9d9;
     border: 0.4vh solid black;
     border-radius: 5px;
   }
-  #rightbottom{
+  #rightbottom {
     display: grid;
     grid-template-rows: 1.6fr 1fr;
   }
-  .alcholbox{
+  .alcholbox {
     border: 0.4vh solid black;
     border-radius: 5px;
     margin-left: -0.4vh;
   }
-  #smilebox{
+  #smilebox {
     position: relative;
     z-index: -1;
     margin-top: 0.4vh;
@@ -618,36 +554,36 @@
     grid-template-columns: repeat(10, 1fr);
     /* grid-auto-rows: minmax(17px, auto); */
   }
-  .square{
-    border: 0.4vh solid #D9D9D9;
+  .square {
+    border: 0.4vh solid #d9d9d9;
     border-radius: 5px;
     margin: -0.2vh;
   }
-  .square2{
-    border: 0.4vh solid #D9D9D9;
+  .square2 {
+    border: 0.4vh solid #d9d9d9;
     border-radius: 5px;
     margin: -0.2vh;
-    background-color: #D9D9D9;
+    background-color: #d9d9d9;
   }
-  .alcholbox .circle{
+  .alcholbox .circle {
     position: absolute;
     z-index: -1;
-    background-color: #D9D9D9;
+    background-color: #d9d9d9;
     border-radius: 50%;
     width: 32.8vh;
     height: 32.8vh;
     margin-top: 1vh;
     margin-left: 1vh;
   }
-  .alcholbox .textbox{
+  .alcholbox .textbox {
     position: absolute;
     display: grid;
     grid-template-rows: 1fr 1.2fr;
     margin-left: 3vh;
   }
-  .alcholbox .textbox .text1{
+  .alcholbox .textbox .text1 {
     position: absolute;
-    font-family: 'KoPubWorldBatang';
+    font-family: "KoPubWorldBatang";
     font-weight: 500;
     font-size: 7vh;
     /* background-color: yellow; */
@@ -656,17 +592,17 @@
     margin-top: 8.4vh;
     text-align: right;
   }
-  .alcholbox .textbox .text2{
+  .alcholbox .textbox .text2 {
     position: absolute;
-    font-family: 'KoPubWorldBatang';
+    font-family: "KoPubWorldBatang";
     font-weight: 500;
     font-size: 3vh;
     margin-left: 19.2vh;
     margin-top: 4vh;
     /* background-color: yellowgreen; */
   }
-  .alcholbox .textbox .text3{
-    font-family: 'KoPubWorldBatang';
+  .alcholbox .textbox .text3 {
+    font-family: "KoPubWorldBatang";
     font-weight: medium;
     font-size: 14.2vh;
     text-align: right;

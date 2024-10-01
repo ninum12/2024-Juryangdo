@@ -4,13 +4,13 @@ const btn2 = document.getElementById("btn2");
 var bottle = 0;
 var glass = 0;
 
-function paintSojuInput(){
+function paintSojuInput() {
   document.querySelector("#inputbox").replaceChildren();
   document.querySelector("#confirmbox").replaceChildren();
 
   const div = document.createElement("div");
   div.className = "blank";
-  div.id = "bySoju"
+  div.id = "bySoju";
 
   const bottleOption = document.createElement("input");
   bottleOption.type = "number";
@@ -35,18 +35,18 @@ function paintSojuInput(){
   glassDiv.innerText = "잔";
 
   const confirm = document.createElement("button");
-  confirm.type = "button"
+  confirm.type = "button";
   confirm.id = "confirm";
-  
+
   const blankdiv = document.createElement("div");
-  
+
   const btntext = document.createElement("div");
   btntext.innerText = "결과 확인하기";
-  btntext.id = 'btntext';
+  btntext.id = "btntext";
 
   const arrowright = document.createElement("img");
-  arrowright.src = 'juryangdo/img/arrowright.webp';
-  arrowright.id = 'arrowright';
+  arrowright.src = "juryangdo/img/arrowright.webp";
+  arrowright.id = "arrowright";
 
   div.appendChild(bottleOption);
   div.appendChild(bottleDiv);
@@ -59,17 +59,17 @@ function paintSojuInput(){
   document.querySelector("#inputbox").append(div);
 }
 
-function paintBeerInput(){
+function paintBeerInput() {
   document.querySelector("#inputbox").replaceChildren();
   document.querySelector("#confirmbox").replaceChildren();
 
   const div = document.createElement("div");
   div.className = "blank";
-  div.id = "byBeer"
+  div.id = "byBeer";
 
   const selectGlass = document.createElement("select");
   selectGlass.className = "selectGlass";
-  selectGlass.id = "bottle"
+  selectGlass.id = "bottle";
 
   const firstMl = document.createElement("option");
   firstMl.className = "one";
@@ -88,7 +88,7 @@ function paintBeerInput(){
   glassMl.innerText = "ml";
 
   const numberOption = document.createElement("input");
-  numberOption.type = "number"
+  numberOption.type = "number";
   numberOption.max = "100";
   numberOption.placeholder = "NUMBER";
   numberOption.id = "glass";
@@ -98,19 +98,19 @@ function paintBeerInput(){
   glassDiv.innerText = "잔";
 
   const confirm = document.createElement("button");
-  confirm.type = "button"
+  confirm.type = "button";
   confirm.id = "confirm";
-  
+
   const blankdiv = document.createElement("div");
-  
+
   const btntext = document.createElement("div");
   btntext.innerText = "결과 확인하기";
-  btntext.id = 'btntext';
+  btntext.id = "btntext";
 
   const arrowright = document.createElement("img");
-  arrowright.src = 'juryangdo/img/arrowright.webp';
-  arrowright.id = 'arrowright';
-  
+  arrowright.src = "juryangdo/img/arrowright.webp";
+  arrowright.id = "arrowright";
+
   selectGlass.appendChild(firstMl);
   selectGlass.appendChild(secondMl);
   selectGlass.appendChild(thirdMl);
@@ -125,44 +125,45 @@ function paintBeerInput(){
   document.querySelector("#inputbox").append(div);
 }
 
-btn1.addEventListener("click", function(event) {
+btn1.addEventListener("click", function (event) {
   paintSojuInput();
   event.preventDefault();
 
-  function test(){
-    bottle = document.getElementById('bottle').value;
-    glass = document.getElementById('glass').value;
+  function test() {
+    bottle = document.getElementById("bottle").value;
+    glass = document.getElementById("glass").value;
 
-    if (bottle == 0 && glass == 0){
+    if (bottle == 0 && glass == 0) {
       glass = 1;
-    };
-    const myAlchol = Math.floor((360 * bottle + 50 * glass ) * 0.16 * 0.7947 * 10) / 10;
+    }
+    const myAlchol =
+      Math.floor((360 * bottle + 50 * glass) * 0.16 * 0.7947 * 10) / 10;
     localStorage.setItem(My_Alchol, myAlchol);
 
-    location.href='sojupage.html';
+    location.href = "sojupage.html";
   }
 
   const btn3 = document.getElementById("confirm");
-  btn3.addEventListener('click', test);
+  btn3.addEventListener("click", test);
 });
 
-btn2.addEventListener("click", function(event) {
+btn2.addEventListener("click", function (event) {
   paintBeerInput();
   event.preventDefault();
 
-  function test(){
-    bottle = document.getElementById('bottle').value;
-    glass = document.getElementById('glass').value;
+  function test() {
+    bottle = document.getElementById("bottle").value;
+    glass = document.getElementById("glass").value;
 
-    if (glass == 0){
+    if (glass == 0) {
       glass = 1;
-    };
+    }
     const myAlchol = Math.floor(bottle * glass * 0.05 * 0.7947 * 10) / 10;
     localStorage.setItem(My_Alchol, myAlchol);
 
-    location.href='sojupage.html';
+    location.href = "sojupage.html";
   }
 
   const btn3 = document.getElementById("confirm");
-  btn3.addEventListener('click', test);
+  btn3.addEventListener("click", test);
 });
