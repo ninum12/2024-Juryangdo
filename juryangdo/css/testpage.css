@@ -8,12 +8,9 @@ body {
     display: flex;
     place-content: center;
     overflow: hidden;
-    /* align-items: center; */
   }
   .container {
-    display: grid;
-    /* grid-template-rows: 1fr 1fr 1fr; */
-    place-content: center;
+    margin-top: 5vh;
   }
   #leftbox .innerbox,
   .rowblank,
@@ -223,7 +220,6 @@ body {
     margin-top: 2vw;
   }
   #leftbox {
-    height: 12.8vh;
     place-content: end;
     margin-bottom: -0.2vw;
   }
@@ -257,7 +253,6 @@ body {
   #box-top #arrow {
     width: auto;
     height: 3vh;
-    /* margin-bottom: 0.3vh; */
   }
   #box-top #back {
     font-family: "PTBandocheB";
