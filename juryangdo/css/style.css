@@ -104,7 +104,7 @@ body {
   }
   #containbox #listbox {
     display: grid;
-    margin-left: 8vw;
+    margin: 0 6vw;
   }
   #listbox #drinks {
     margin-top: 2vh;
