@@ -402,6 +402,7 @@ button {
     background-color: #d9d9d9;
   }
   .button:focus {
+    outline: none;
     border-bottom: 0;
     background-color: white;
   }

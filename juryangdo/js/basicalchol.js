@@ -125,6 +125,27 @@ function paintBeerInput() {
   document.querySelector("#inputbox").append(div);
 }
 
+btn1.focus();
+
+paintSojuInput();
+
+function test() {
+  bottle = document.getElementById("bottle").value;
+  glass = document.getElementById("glass").value;
+
+  if (bottle == 0 && glass == 0) {
+    glass = 1;
+  }
+  const myAlchol =
+    Math.floor((360 * bottle + 50 * glass) * 0.16 * 0.7947 * 10) / 10;
+  localStorage.setItem(My_Alchol, myAlchol);
+
+  location.href = "sojupage.html";
+}
+
+const btn3 = document.getElementById("confirm");
+btn3.addEventListener("click", test);
+
 btn1.addEventListener("click", function (event) {
   paintSojuInput();
   event.preventDefault();
