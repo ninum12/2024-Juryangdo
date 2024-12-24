@@ -329,7 +329,7 @@ button {
   #container {
     display: grid;
     grid-template-columns: 1fr 1.4fr;
-    grid-auto-rows: 70vw;
+    grid-auto-rows: 100vh;
     max-width: 1256px;
     width: 162vh;
     place-content: center;
