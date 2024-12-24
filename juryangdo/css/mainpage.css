@@ -14,18 +14,13 @@ button {
   }
   #container {
     display: grid;
-    margin-top: 5vh;
-    max-width: 1256px;
-    width: 162vw;
+    place-content: center;
     height: 100vh;
     overflow: hidden;
-    /* grid-template-columns: 2.3fr 1fr; */
-    /* background-color: antiquewhite; */
   }
   #boxone {
     display: grid;
     width: 100vw;
-    /* grid-template-columns: 1fr 1.28fr; */
   }
 
   #leftbox,
