@@ -14,6 +14,7 @@ button {
   }
   #container {
     display: grid;
+    margin-top: -5vh;
     place-content: center;
     height: 100vh;
     overflow: hidden;
