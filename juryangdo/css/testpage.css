@@ -263,19 +263,16 @@ button {
     display: flex;
     place-content: center;
     overflow: hidden;
-    /* align-items: center; */
   }
   .container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-auto-rows: 100vh;
-    /* gap: 32px; */
-    /* gap: 4.2vh; */
     max-width: 1256px;
     width: 162vh;
+    place-content: center;
   }
   .containBox {
-    /* border: 2px solid black; */
     border-radius: 4px;
     margin: 0 1px 0 1px;
     display: grid;

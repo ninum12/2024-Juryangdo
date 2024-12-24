@@ -224,14 +224,16 @@ button {
     margin: 0;
     display: flex;
     place-content: center;
+    align-items: center;
     overflow: hidden;
   }
   #container {
     display: grid;
-    grid-auto-rows: 100vh;
     max-width: 1256px;
     width: 162vh;
+    aspect-ratio: 8.1 / 5;
     grid-template-columns: 2.3fr 1fr;
+    place-content: center;
   }
   #boxone {
     display: grid;
@@ -239,6 +241,7 @@ button {
   }
   .box {
     display: grid;
+    height: 100%;
     grid-template-rows: repeat(32, minmax(0, 1fr));
   }
   #lefttop {
@@ -258,8 +261,8 @@ button {
   .innerbox .circle {
     background-color: #d9d9d9;
     border-radius: 50%;
-    width: 32.8vh;
-    height: 32.8vh;
+    height: 100%;
+    aspect-ratio: 1;
     display: grid;
     place-content: center;
     text-align: center;
@@ -305,7 +308,8 @@ button {
   }
   #leftbox .itembox .items .item2 img {
     width: auto;
-    height: 13vh;
+    height: 100%;
+    max-height: 90px;
     display: absolute;
     /* margin: -1.7vh; */
     filter: grayscale(100%);
@@ -319,13 +323,10 @@ button {
   #midbox .itembox .boxtwo {
     display: grid;
     grid-column: 1;
-    /* grid-template-rows: 1fr 1fr; */
-    /* background-color: rgb(179, 179, 230); */
   }
   .boxtwo .rowblank {
     height: 5.6vh;
     border: 0.4vh solid black;
-    /* border-radius: 5px; */
     border-radius: 5px 0 0 5px;
     border-right: 0;
     margin-left: -0.4vh;
@@ -333,9 +334,7 @@ button {
   .boxtwo .items {
     display: grid;
     margin-top: -0.4vh;
-    /* margin-left: -0.2vh; */
     grid-template-columns: 1fr 1.2fr 1.2fr 1.2fr;
-    /* background-color: rgb(151, 132, 169); */
   }
   .boxtwo .items .item {
     margin-left: -0.3vh;
@@ -374,27 +373,29 @@ button {
     margin-top: -0.4vh;
     border-radius: 5px;
   }
+  .imgbox img {
+    height: 100%;
+  }
   #bottlebox .imgbox img {
     margin-top: 1vh;
-    height: 20vh;
+    max-height: 140px;
     width: auto;
   }
   #winebox .imgbox img {
-    height: 17.6vh;
+    max-height: 107px;
     width: auto;
   }
   #beerbox .imgbox img {
-    height: 14vh;
+    max-height: 97px;
     width: auto;
   }
   #sojubox .imgbox img {
     margin-top: 1vh;
-    height: 7vh;
+    max-height: 57px;
     width: auto;
   }
   #midbox .itembox .items .item .text {
     border: 0.4vh solid black;
-    /* margin-top: -0.2vh; */
     border-radius: 5px;
     display: grid;
     place-content: center;
@@ -423,20 +424,16 @@ button {
     font-size: 3vh;
     font-family: "Pretendard";
     font-weight: 500;
-    margin-left: 2vh;
-    margin-bottom: 1vh;
+    padding: 0 1vh;
+    padding-bottom: 1vh;
   }
   #title {
     grid-row: 11/23;
     display: grid;
     place-content: center;
     font-family: "양진체";
-    /* border: 0.4vh solid black;
-    border-radius: 5px; */
-    /* margin-top: 2vh; */
     font-size: 16vh;
     font-weight: 400;
-    /* background-color: antiquewhite; */
   }
   #title div {
     margin-top: 4vh;
@@ -450,7 +447,6 @@ button {
   .warn {
     border: 0.4vh solid black;
     border-radius: 5px;
-    /* background-color: rgb(172, 219, 203); */
     font-size: 2vh;
     font-family: "Pretendard";
     font-weight: light;
@@ -483,7 +479,7 @@ button {
     background-color: #d9d9d9;
     font-family: "양진체";
     font-weight: 500;
-    font-size: 4vh;
+    font-size: 3vh;
   }
   .confirm div {
     display: flex;
@@ -547,9 +543,7 @@ button {
     z-index: -1;
     margin-top: 0.4vh;
     display: grid;
-    /* grid-template-columns: (10, 1fr); */
     grid-template-columns: repeat(10, 1fr);
-    /* grid-auto-rows: minmax(17px, auto); */
   }
   .square {
     border: 0.4vh solid #d9d9d9;
@@ -567,8 +561,8 @@ button {
     z-index: -1;
     background-color: #d9d9d9;
     border-radius: 50%;
-    width: 32.8vh;
-    height: 32.8vh;
+    height: 32%;
+    aspect-ratio: 1;
     margin-top: 1vh;
     margin-left: 1vh;
   }
@@ -583,8 +577,6 @@ button {
     font-family: "KoPubWorldBatang";
     font-weight: 500;
     font-size: 7vh;
-    /* background-color: yellow; */
-    /* margin-right: -2vh; */
     margin-left: 3vh;
     margin-top: 8.4vh;
     text-align: right;
@@ -596,14 +588,12 @@ button {
     font-size: 3vh;
     margin-left: 19.2vh;
     margin-top: 4vh;
-    /* background-color: yellowgreen; */
   }
   .alcholbox .textbox .text3 {
     font-family: "KoPubWorldBatang";
     font-weight: medium;
-    font-size: 14.2vh;
+    font-size: 700%;
     text-align: right;
-    /* background-color: blue; */
     width: 33.6vh;
     margin-top: -2.8vh;
   }
