@@ -131,11 +131,7 @@ function paintDrink(drink, rownumber) {
       item.style.display = "block";
     }
   });
-  // plusbtn.addEventListener("focus", () =>{
-  //   plusbtn.innerText = '-';
-  //   item.style.display ='none';
-  //   scriptbox.style.display = 'block';
-  // });
+
   plusbtn.addEventListener("blur", () => {
     plusbtn.innerText = "+";
     scriptbox.style.display = "none";
@@ -195,71 +191,6 @@ function paintDrink(drink, rownumber) {
   guide.className = "guide";
   guide.innerText = "잔 마실 수 있어요";
 
-  // const bottleintext = document.createElement("div");
-  // bottleintext.className = 'intext';
-
-  // const bottleboldtext = document.createElement("b");
-
-  // const bottleguide = document.createElement("div");
-  // bottleguide.className = 'guide';
-  // bottleguide.innerText = '병 '
-
-  // if(drink.calresult > bottle){
-  //   const countBottle = Math.floor(drink.calresult/bottle);
-  //   const leftcalresult = Math.floor((drink.calresult - bottle * countBottle) * 10) / 10
-  //   const countGlass = Math.floor(leftcalresult);
-
-  //   for (var i = 0; i < countBottle; i++){
-  //     const bottleImage = document.createElement("img");
-  //     bottleImage.className = 'glass';
-  //     bottleImage.src = "juryangdo/glassimg/bottle.png";
-  //     glassbox.appendChild(bottleImage);
-  //   }
-  //   for (var i = 0; i < countGlass; i++){
-  //     const glassImage = document.createElement("img");
-  //     glassImage.className = 'glass';
-  //     glassImage.src = "juryangdo/glassimg/soju10.png";
-  //     glassbox.appendChild(glassImage);
-  //   }
-
-  //   const number = Math.round((leftcalresult - countGlass)*10);
-
-  //   bottleboldtext.innerText = countBottle;
-  //   guidetext.appendChild(bottleintext);
-  //   bottleintext.appendChild(bottleboldtext);
-  //   guidetext.appendChild(bottleguide);
-
-  //   if(number != 0){
-  //     leftoverImage.src = `juryangdo/glassimg/soju${number}.png`;
-  //     glassbox.appendChild(leftoverImage);
-
-  //     glassboldtext.innerText = leftcalresult;
-  //     guidetext.appendChild(glassintext);
-  //     glassintext.appendChild(glassboldtext);
-  //     guidetext.appendChild(guide);
-  //   }else{
-  //     bottleguide.innerText = bottleguide.innerText + '마실 수 있어요';
-  //   }
-
-  // }else{
-  //   const count = Math.floor(drink.calresult);
-  //   for (var i = 0; i < count; i++){
-  //     const glassImage = document.createElement("img");
-  //     glassImage.className = 'glass';
-  //     glassImage.src = "juryangdo/glassimg/soju10.png";
-  //     glassbox.appendChild(glassImage);
-  //   }
-  //   const number = Math.round((drink.calresult - count)*10);
-  //   if(number != 0){
-  //     leftoverImage.src = `juryangdo/glassimg/soju${number}.png`;
-  //     glassbox.appendChild(leftoverImage);
-  //   }
-
-  //   glassboldtext.innerText = drink.calresult;
-  //   guidetext.appendChild(glassintext);
-  //   glassintext.appendChild(glassboldtext);
-  //   guidetext.appendChild(guide);
-  // }
   const count = Math.floor(drink.calresult);
   for (var i = 0; i < count; i++) {
     const glassImage = document.createElement("img");

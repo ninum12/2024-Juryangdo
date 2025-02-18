@@ -128,11 +128,7 @@ function paintDrink(drink, rownumber) {
       item.style.display = "block";
     }
   });
-  // plusbtn.addEventListener("focus", () =>{
-  //   plusbtn.innerText = '-';
-  //   item.style.display ='none';
-  //   scriptbox.style.display = 'block';
-  // });
+
   plusbtn.addEventListener("blur", () => {
     plusbtn.innerText = "+";
     scriptbox.style.display = "none";
