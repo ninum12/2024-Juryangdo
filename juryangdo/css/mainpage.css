@@ -320,7 +320,7 @@ button {
   }
   .boxtwo .items {
     display: grid;
-    margin-top: -0.4vh;
+    margin-top: -2.6vh;
     grid-template-columns: 1fr 1.2fr 1.2fr 1.2fr;
   }
   .boxtwo .items .item {
@@ -360,28 +360,25 @@ button {
     margin-top: -0.4vh;
     border-radius: 5px;
   }
-  .imgbox img {
-    height: 100%;
-  }
   #bottlebox .imgbox img {
     margin-top: 1vh;
-    height: 18vh;
+    height: 16vh;
     max-height: 157px;
     width: auto;
   }
   #winebox .imgbox img {
-    height: 16vh;
+    height: 11vh;
     max-height: 107px;
     width: auto;
   }
   #beerbox .imgbox img {
-    height: 12vh;
+    height: 13vh;
     max-height: 97px;
     width: auto;
   }
   #sojubox .imgbox img {
     margin-top: 1vh;
-    height: 5vh;
+    height: 6vh;
     max-height: 57px;
     width: auto;
   }
