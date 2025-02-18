@@ -147,6 +147,7 @@ button {
     font-size: 2vh;
     padding: 2vh;
     line-height: 3.7vh;
+    word-break: keep-all;
   }
   #listbox #drinks .rowbox .itembox .item .firstbox {
     position: relative;
@@ -544,6 +545,7 @@ button {
     font-size: 2vh;
     padding: 2vh;
     line-height: 3.7vh;
+    word-break: keep-all;
   }
   #listbox #drinks .rowbox .itembox .item .firstbox {
     position: relative;

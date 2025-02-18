@@ -93,11 +93,7 @@ function paintDrink(drink, rownumber) {
       item.style.display = "block";
     }
   });
-  // plusbtn.addEventListener("focus", () =>{
-  //   plusbtn.innerText = '-';
-  //   item.style.display ='none';
-  //   scriptbox.style.display = 'block';
-  // });
+
   plusbtn.addEventListener("blur", () => {
     plusbtn.innerText = "+";
     scriptbox.style.display = "none";
@@ -115,10 +111,6 @@ function paintDrink(drink, rownumber) {
 
   const namebox = document.createElement("div");
   namebox.className = "namebox";
-
-  // const flag = document.createElement("img");
-  // flag.className = 'flag';
-  // flag.src = `juryangdo/flag/${drink.mfg}.webp`;
 
   const outcircle = document.createElement("div");
   outcircle.className = "outcircle";
