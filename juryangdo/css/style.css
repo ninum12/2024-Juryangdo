@@ -521,9 +521,7 @@ button {
   }
   #listbox #drinks .rowbox {
     margin: 0vh 3.2vh 4vh 3.2vh;
-    /* min-height: 60.2vh; */
     height: fit-content;
-    /* height: max-content; */
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 3.2vh;
@@ -548,7 +546,6 @@ button {
     line-height: 3.7vh;
   }
   #listbox #drinks .rowbox .itembox .item .firstbox {
-    /* grid-row: 1; */
     position: relative;
     height: 31vh;
     border-bottom: 0.4vh dashed #d9d9d9;
@@ -561,7 +558,6 @@ button {
   }
 
   #listbox #drinks .rowbox .itembox .item .secondbox {
-    /* grid-row: 2; */
     display: grid;
     border-top: none;
     border-radius: 10px;
@@ -570,7 +566,6 @@ button {
   }
 
   #listbox #drinks .rowbox .itembox .plusbox {
-    /* grid-row: 2; */
     display: grid;
     place-content: center;
     padding: 2vh;
@@ -609,7 +604,6 @@ button {
     place-content: center;
   }
   .flag {
-    /* z-index: 1; */
     position: absolute;
     height: 3vh;
     width: auto;
@@ -702,7 +696,6 @@ button {
     margin: 2vh 2vh 0 2vh;
     display: flex;
     flex-wrap: wrap;
-    /* background-color: aquamarine; */
     height: fit-content;
   }
   .glassbox .glass {

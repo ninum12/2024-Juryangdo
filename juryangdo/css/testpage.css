@@ -106,9 +106,7 @@ button {
   #subtitle div {
     text-align: center;
     grid-row: 2/3;
-    /* font-family: 'HS-Regular'; */
     font-family: "PTBandocheB";
-    /* font-family: '양진체'; */
     font-size: 5.6vw;
     font-weight: bold;
   }
@@ -122,11 +120,8 @@ button {
   #buttonbox {
     margin: -0.3vw;
     grid-row: 1/4;
-    /* height: 8.6vw; */
-    /* width: 65vw; */
     display: grid;
     grid-template-columns: 1fr 1fr;
-    /* border: 0.4vw solid black; */
   }
   .button {
     margin: -0.2vw;
@@ -143,12 +138,9 @@ button {
     background-color: white;
   }
   #inputbox {
-    /* background-color: antiquewhite; */
     grid-row: 6/8;
     display: grid;
     place-content: center;
-    /* display: flex; */
-    /* width: 65vw; */
   }
   .blank {
     display: flex;
@@ -193,12 +185,9 @@ button {
   }
   #confirm {
     border: 0;
-    /* text-align: right; */
     place-content: end;
     width: 96vw;
     height: 8vw;
-    /* font-family: '양진체'; */
-    /* font-size: 6vw; */
     background-color: #d9d9d9;
     display: grid;
     place-content: end;
@@ -212,7 +201,6 @@ button {
     height: auto;
     margin-right: -1vw;
     margin-top: 0.8vw;
-    /* margin-bottom: 0.3vw; */
   }
   #btntext {
     font-family: "PTBandocheB";
@@ -287,13 +275,8 @@ button {
   }
 
   #midbox {
-    /* min-width: 504px; */
     width: 65vh;
     overflow: hidden;
-    /* width: 73.4vh; */
-    /* grid-template-columns: repeat(1, 1fr); */
-
-    /* gap: 1px; */
   }
   .box {
     border: 0.4vh solid black;
@@ -367,16 +350,13 @@ button {
   #subtitle div {
     text-align: center;
     grid-row: 2/3;
-    /* font-family: 'HS-Regular'; */
     font-family: "PTBandocheB";
-    /* font-family: '양진체'; */
     font-size: 3.5vh;
     font-weight: 200;
   }
   #title div {
     text-align: center;
     grid-row: 2/3;
-    /* font-family: 'HS-Regular'; */
     font-family: "양진체";
     margin-top: 2vh;
     font-size: 8.8vh;
@@ -385,11 +365,8 @@ button {
   #buttonbox {
     margin: -0.3vh;
     grid-row: 1/4;
-    /* height: 8.6vh; */
-    /* width: 65vh; */
     display: grid;
     grid-template-columns: 1fr 1fr;
-    /* border: 0.4vh solid black; */
   }
   .button {
     margin: -0.2vh;
@@ -407,12 +384,9 @@ button {
     background-color: white;
   }
   #inputbox {
-    /* background-color: antiquewhite; */
     grid-row: 6/8;
     display: grid;
     place-content: center;
-    /* display: flex; */
-    /* width: 65vh; */
   }
   .blank {
     display: flex;
@@ -457,11 +431,9 @@ button {
   }
   #confirm {
     border: 0;
-    /* text-align: right; */
     place-content: end;
     width: 60vh;
     height: 4vh;
-    /* font-family: '양진체'; */
     font-family: "PTBandocheB";
     font-size: 2.5vh;
     background-color: #d9d9d9;
@@ -476,7 +448,6 @@ button {
     width: auto;
     height: 4vh;
     margin-right: -1vh;
-    /* margin-bottom: 0.3vh; */
   }
   #btntext {
     font-family: "PTBandocheB";
@@ -514,7 +485,6 @@ button {
     height: 3.99vh;
     border: 0.4vh solid #d9d9d9;
     border-radius: 5px;
-    /* margin: 0 -0.2vh 0 -0.1vh; */
   }
   #leftbox .rectangle1 button {
     border: 0;
@@ -528,7 +498,6 @@ button {
   #leftbox .rectangle1 #arrow {
     width: auto;
     height: 3vh;
-    /* margin-bottom: 0.3vh; */
   }
   #leftbox .rectangle1 #back {
     font-family: "PTBandocheB";
@@ -582,7 +551,6 @@ button {
   .itembox {
     border: 0.4vh solid black;
     border-radius: 5px;
-    /* background-color: rgb(173, 106, 106); */
   }
   #leftbox .itembox {
     grid-row: 16/31;
@@ -754,7 +722,6 @@ button {
   #rightbox .itembox .items .item .text {
     display: grid;
     place-content: center;
-    /* display: flex; */
   }
   #rightbox .itembox .items .item .text div {
     font-family: "NanumBarunpen";
