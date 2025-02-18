@@ -1,6 +1,7 @@
 body {
   text-decoration: none;
   color: black;
+  word-break: keep-all;
 }
 button {
   cursor: pointer;
@@ -217,7 +218,6 @@ button {
   }
   #container {
     display: grid;
-    max-width: 1256px;
     width: 162vh;
     aspect-ratio: 8.1 / 5;
     grid-template-columns: 2.3fr 1fr;
@@ -230,7 +230,6 @@ button {
   }
   .box {
     display: grid;
-    height: 100%;
     grid-template-rows: repeat(32, minmax(0, 1fr));
   }
   #lefttop {
@@ -569,15 +568,15 @@ button {
     font-family: "KoPubWorldBatang";
     font-weight: 500;
     font-size: 3vh;
-    margin-left: 19.2vh;
+    margin-left: 18.8vh;
     margin-top: 4vh;
   }
   .alcholbox .textbox .text3 {
     font-family: "KoPubWorldBatang";
     font-weight: medium;
-    font-size: 700%;
+    font-size: 12vh;
     text-align: right;
     width: 33.6vh;
-    margin-top: -2.8vh;
+    margin-left: -1vh;
   }
 }
