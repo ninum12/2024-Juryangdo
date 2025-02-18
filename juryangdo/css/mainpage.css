@@ -1,7 +1,6 @@
 body {
   text-decoration: none;
   color: black;
-  word-break: keep-all;
 }
 button {
   cursor: pointer;
@@ -295,8 +294,8 @@ button {
   }
   #leftbox .itembox .items .item2 img {
     width: auto;
-    height: 10vh;
-    max-height: 90px;
+    height: 12vh;
+    max-height: 120px;
     display: absolute;
     filter: grayscale(100%);
   }
@@ -319,7 +318,7 @@ button {
   }
   .boxtwo .items {
     display: grid;
-    margin-top: -2.6vh;
+    margin-top: -1.6vh;
     grid-template-columns: 1fr 1.2fr 1.2fr 1.2fr;
   }
   .boxtwo .items .item {
@@ -353,32 +352,31 @@ button {
     grid-row: 10/15;
   }
   .imgbox {
-    display: grid;
-    place-content: center;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
     border: 0.4vh solid black;
-    margin-top: -0.4vh;
     border-radius: 5px;
+    margin-top: -0.4vh;
   }
   #bottlebox .imgbox img {
-    margin-top: 1vh;
-    height: 16vh;
-    max-height: 157px;
+    height: 20vh;
+    max-height: 200px;
     width: auto;
   }
   #winebox .imgbox img {
-    height: 11vh;
-    max-height: 107px;
+    height: 18vh;
+    max-height: 160px;
     width: auto;
   }
   #beerbox .imgbox img {
-    height: 13vh;
-    max-height: 97px;
+    height: 14vh;
+    max-height: 128px;
     width: auto;
   }
   #sojubox .imgbox img {
-    margin-top: 1vh;
-    height: 6vh;
-    max-height: 57px;
+    height: 10vh;
+    max-height: 80px;
     width: auto;
   }
   #midbox .itembox .items .item .text {
