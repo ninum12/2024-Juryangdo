@@ -646,8 +646,6 @@ button {
     grid-template-columns: 1.7fr 1fr;
   }
   #rightbox .itembox .items {
-    /* border: 0.4vh solid black; */
-    /* margin: -0.2vh; */
     display: grid;
     grid-template-rows: 1.2fr 1.2fr 1.2fr 1fr;
   }
