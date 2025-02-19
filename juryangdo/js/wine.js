@@ -78,7 +78,7 @@ const drinks = document.getElementById("drinks");
 
 function calculateWine(wine) {
   const alcholEach = wine.alchol;
-  const resultWine = (myAlchol / (150 * alcholEach * 0.7947)) * 100;
+  const resultWine = (myAlchol / (150 * alcholEach * 0.8)) * 100;
   return resultWine;
 }
 //잔계산한 값 저장하기

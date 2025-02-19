@@ -48,7 +48,7 @@ const drinks = document.getElementById("drinks");
 
 function calculateSoju(soju) {
   const alcholEach = soju.alchol;
-  const resultSoju = (myAlchol / (50 * alcholEach * 0.7947)) * 100;
+  const resultSoju = (myAlchol / (50 * alcholEach * 0.8)) * 100;
   return resultSoju;
 }
 //잔계산한 값 저장하기

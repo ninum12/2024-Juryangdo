@@ -78,7 +78,7 @@ const drinks = document.getElementById("drinks");
 //잔 계산하기
 function calculateBeer(beer) {
   const alcholEach = beer.alchol;
-  const resultBeer = (myAlchol / (255 * alcholEach * 0.7947)) * 100;
+  const resultBeer = (myAlchol / (255 * alcholEach * 0.8)) * 100;
   return resultBeer;
 }
 //잔계산한 값 저장하기

@@ -137,7 +137,7 @@ function test() {
     glass = 1;
   }
   const myAlchol =
-    Math.floor((360 * bottle + 50 * glass) * 0.16 * 0.7947 * 10) / 10;
+    Math.floor((360 * bottle + 50 * glass) * 0.16 * 0.8 * 10) / 10;
   localStorage.setItem(My_Alchol, myAlchol);
 
   location.href = "sojupage.html";
@@ -158,7 +158,7 @@ btn1.addEventListener("click", function (event) {
       glass = 1;
     }
     const myAlchol =
-      Math.floor((360 * bottle + 50 * glass) * 0.16 * 0.7947 * 10) / 10;
+      Math.floor((360 * bottle + 50 * glass) * 0.16 * 0.8 * 10) / 10;
     localStorage.setItem(My_Alchol, myAlchol);
 
     location.href = "sojupage.html";
@@ -179,7 +179,7 @@ btn2.addEventListener("click", function (event) {
     if (glass == 0) {
       glass = 1;
     }
-    const myAlchol = Math.floor(bottle * glass * 0.05 * 0.7947 * 10) / 10;
+    const myAlchol = Math.floor(bottle * glass * 0.05 * 0.8 * 10) / 10;
     localStorage.setItem(My_Alchol, myAlchol);
 
     location.href = "sojupage.html";
